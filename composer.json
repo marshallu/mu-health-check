@@ -1,0 +1,35 @@
+{
+	"name": "marshallu/mu-health-check",
+	"description": "Exposes a /_health endpoint for uptime monitoring.",
+	"keywords": ["wordpress", "plugin", "health", "monitoring"],
+	"homepage": "https://github.com/marshallu/mu-health-check",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Christopher McComas",
+			"email": "cmccomas@marshall.edu"
+		}
+	],
+	"type": "wordpress-muplugin",
+	"require": {
+		"php": ">=8.3"
+	},
+	"require-dev": {
+		"squizlabs/php_codesniffer": "@stable",
+		"wp-coding-standards/wpcs": "^3.1",
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+		"phpstan/phpstan": "^2.1",
+		"szepeviktor/phpstan-wordpress": "^2.0",
+		"php-stubs/wordpress-stubs": "^6.9"
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	},
+	"scripts": {
+		"format": "phpcbf --extensions=php --standard=phpcs.xml --report-summary --report-source",
+		"lint": "phpcs --extensions=php --standard=phpcs.xml",
+		"analyse": "phpstan analyse --memory-limit=4G"
+	}
+}
