@@ -1,5 +1,6 @@
 {
 	"name": "marshallu/mu-health-check",
+	"version": "1.0.1",
 	"description": "Exposes a /_health endpoint for uptime monitoring.",
 	"keywords": ["wordpress", "plugin", "health", "monitoring"],
 	"homepage": "https://github.com/marshallu/mu-health-check",
